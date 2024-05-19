@@ -1,0 +1,7 @@
+.footer {
+    @extend .py-5;
+    background-color: map-get($colors, primary);
+    width: 100%;
+    border: 2px solid map-get($colors, secondary);
+    border-radius: 24px 24px 0 0;
+}

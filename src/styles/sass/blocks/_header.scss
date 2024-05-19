@@ -1,0 +1,38 @@
+.header {
+    @extend .flex-container;
+    @extend .flex-align-center;
+
+    margin-top: 100px;
+    height: 80vh;
+
+    &-banner {
+        @extend .flex-container;
+        @extend .flex-column;
+
+        gap: 20px;
+
+        h1 {
+            @extend .font-size-86;
+        }
+
+        span {
+            color: map-get($colors, secondary);
+        }
+
+        p {
+            opacity: 0.5;
+        }
+    }
+
+    .blog {
+        @extend .flex-container;
+        @extend .flex-column;
+        @extend .flex-align-center;
+        gap: 20px;
+
+        h4 {
+            @extend .font-size-40;
+            text-transform: uppercase;
+        }
+    }
+}

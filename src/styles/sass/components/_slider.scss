@@ -1,0 +1,58 @@
+.blog-items {
+    @extend .px-3;
+    border: 2px solid map-get($colors, secondary);
+    border-radius: 48px;
+    height: 50vh;
+    overflow: hidden;
+    background-color: map-get($colors, light);
+
+    .slider {
+        height: inherit;
+        overflow-y: auto;
+        padding: 0 10px;
+
+        &::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: transparent;
+
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: map-get($colors, secondary );
+            border-radius: 5px;
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .swiper-slide {
+        @extend .my-1;
+        @extend .p-4;
+        @extend .font-size-16;
+
+
+        font-size: 18px;
+        background: map-get($colors, success);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 48px;
+        transition: all 0.2s ease;
+        gap: 10px;
+
+        span{
+            @extend .font-size-14;
+            opacity: 0.5;
+        }
+
+        &:hover {
+            background-color: map-get($colors, secondary );
+        }
+    }
+}
