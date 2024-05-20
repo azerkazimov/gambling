@@ -1761,7 +1761,7 @@ a {
   font-size: 59px !important;
 }
 
-.font-size-60 {
+.font-size-60, .header-banner h1 {
   font-size: 60px !important;
 }
 
@@ -1865,7 +1865,7 @@ a {
   font-size: 85px !important;
 }
 
-.font-size-86, .header-banner h1 {
+.font-size-86 {
   font-size: 86px !important;
 }
 
@@ -2241,6 +2241,7 @@ a {
 .banner {
   overflow: hidden;
   max-height: 80vh;
+  gap: 5px;
 }
 .banner .one {
   animation: scrollUp 20s infinite linear;

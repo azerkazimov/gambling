@@ -8,7 +8,7 @@ function Header() {
     <div className="header">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-4 flex-container flex-align-center">
             <div className="header-banner">
               <h1>
                 HOUSE OF <span>GAMBLING</span>
@@ -22,7 +22,7 @@ function Header() {
           <div className="col-12 col-lg-4">
             <Banner />
           </div>
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-4 flex-container flex-align-center">
             <div className="blog">
               <h4>Blog</h4>
               <div className="blog-items">

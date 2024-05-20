@@ -376,7 +376,7 @@ function Banner() {
             />
           </svg>
         </div>
-        <div className="icon ">
+        <div className="icon down">
           <svg
             width="100"
             height="101"

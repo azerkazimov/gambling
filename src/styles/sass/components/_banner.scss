@@ -2,6 +2,7 @@
     @extend .flex-container;
     overflow: hidden;
     max-height: 80vh;
+    gap: 5px;
 
     .one {
         animation: scrollUp 20s infinite linear;
