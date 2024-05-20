@@ -34,17 +34,26 @@ const Navbar = () => {
     >
       <div className="container">
         <div className="row">
-          <div className="col-md-2">
+          <div className="col-2">
             <div className="logo"></div>
           </div>
-          <div className="col-md-7 flex-container flex-align-center flex-justify-center">
+          <div className="col-7 flex-container flex-align-center flex-justify-center">
             <ul className={`navbar-item ${burger_class ? "open" : "menu"}`}>
+              {!isMainPage && (
+                <li>
+                  <RouterLink
+                    to="/"
+                    className={`navbar-link`}
+                    onClick={updateBurger}
+                  >
+                    Home
+                  </RouterLink>
+                </li>
+              )}
               <li>
                 <RouterLink
                   to="/about"
-                  className={`navbar-link ${
-                    isMainPage ? "text-natural" : "text-secondary"
-                  }`}
+                  className={`navbar-link`}
                   onClick={updateBurger}
                 >
                   About
@@ -53,9 +62,7 @@ const Navbar = () => {
               <li>
                 <RouterLink
                   to="/brand"
-                  className={`navbar-link ${
-                    isMainPage ? "text-natural" : "text-secondary"
-                  }`}
+                  className={`navbar-link`}
                   onClick={updateBurger}
                 >
                   Brands
@@ -64,9 +71,7 @@ const Navbar = () => {
               <li>
                 <RouterLink
                   to="/comission"
-                  className={`navbar-link ${
-                    isMainPage ? "text-natural" : "text-secondary"
-                  }`}
+                  className={`navbar-link`}
                   onClick={updateBurger}
                 >
                   Comission
@@ -75,9 +80,7 @@ const Navbar = () => {
               <li>
                 <RouterLink
                   to="news"
-                  className={`navbar-link ${
-                    isMainPage ? "text-natural" : "text-secondary"
-                  }`}
+                  className={`navbar-link`}
                   onClick={updateBurger}
                 >
                   News
@@ -86,9 +89,7 @@ const Navbar = () => {
               <li>
                 <RouterLink
                   to="/contact"
-                  className={`navbar-link ${
-                    isMainPage ? "text-natural" : "text-secondary"
-                  }`}
+                  className={`navbar-link`}
                   onClick={updateBurger}
                 >
                   Contact Us
@@ -97,9 +98,7 @@ const Navbar = () => {
               <li>
                 <RouterLink
                   to="/career"
-                  className={`navbar-link ${
-                    isMainPage ? "text-natural" : "text-secondary"
-                  }`}
+                  className={`navbar-link`}
                   onClick={updateBurger}
                 >
                   Careers
@@ -107,7 +106,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-3 flex-container flex-align-center">
+          <div className="col-3 flex-container flex-align-center">
             <div className="burger-menu" onClick={updateBurger}>
               <span className={burger_bar ? "click" : "unclick"}></span>
               <span className={burger_bar ? "click" : "unclick"}></span>

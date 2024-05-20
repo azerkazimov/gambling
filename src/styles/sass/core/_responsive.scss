@@ -113,6 +113,14 @@
       transform: rotate(-90deg);
     }
   }
+
+  .column{
+    flex-direction: column !important;
+  }
+
+  .sosial-media{
+    align-items: center !important;
+  }
 }
 
 @media screen and (max-width: 767px) {

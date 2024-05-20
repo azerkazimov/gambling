@@ -4,4 +4,46 @@
     width: 100%;
     border: 2px solid map-get($colors, secondary);
     border-radius: 24px 24px 0 0;
+
+    .sosial-media {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 10px;
+
+        ul {
+            @extend .flex-container;
+            gap: 10px;
+
+            li {
+                @extend .p-1;
+                border: 2px solid map-get($colors, secondary);
+                border-radius: 50%;
+                transition: all 0.2s ease;
+
+
+                a {
+                    @extend .flex-container;
+                    @extend .flex-justify-center;
+                    @extend .flex-align-center;
+                    @extend .font-size-14;
+                    height: 32px;
+                    width: 32px;
+                    background-color: map-get($colors, secondary);
+                    border-radius: 50%;
+                    transition: all 0.2s ease;
+
+                }
+
+                &:hover {
+                    border: 2px solid map-get($colors, good);
+
+                    a {
+                        background-color: map-get($colors, good);
+                        color: map-get($colors, primary);
+                    }
+                }
+            }
+        }
+    }
 }
