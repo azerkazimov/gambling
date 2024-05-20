@@ -977,7 +977,7 @@ a {
   align-items: end !important;
 }
 
-.flex-justify-center, .nav-btn {
+.flex-justify-center, .banner, .nav-btn {
   justify-content: center !important;
 }
 
@@ -1761,7 +1761,7 @@ a {
   font-size: 59px !important;
 }
 
-.font-size-60, .header-banner h1 {
+.font-size-60 {
   font-size: 60px !important;
 }
 
@@ -1801,7 +1801,7 @@ a {
   font-size: 69px !important;
 }
 
-.font-size-70 {
+.font-size-70, .header-banner h1 {
   font-size: 70px !important;
 }
 
@@ -2052,6 +2052,27 @@ a {
   .nav-bar .burger-menu {
     display: flex !important;
   }
+  .header {
+    height: auto !important;
+    text-align: center;
+  }
+  .banner {
+    max-height: 100% !important;
+  }
+  .relative {
+    position: relative;
+    height: 70vh;
+    min-width: 100%;
+  }
+  .transform-banner {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 0%;
+    right: 0;
+  }
+  .icon svg {
+    transform: rotate(-90deg);
+  }
 }
 @media screen and (max-width: 767px) {
   .container {
@@ -2260,7 +2281,7 @@ a {
   border: 4px solid #478BF9;
   border-radius: 50px;
   width: 100%;
-  height: 33.3333333333%;
+  height: 200px;
 }
 .banner .down svg,
 .banner .up svg {

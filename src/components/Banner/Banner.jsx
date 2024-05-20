@@ -2,7 +2,7 @@ import React from "react";
 
 function Banner() {
   return (
-    <div className="banner">
+    <div className="banner transform-banner">
       <div className="banner-section one">
         <div className="icon">
           <svg

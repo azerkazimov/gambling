@@ -85,6 +85,34 @@
       display: flex !important;
     }
   }
+
+  .header {
+    height: auto !important;
+    text-align: center;
+  }
+
+  .banner {
+    max-height: 100% !important;
+  }
+  .relative{
+    position: relative;
+    height: 70vh;
+    min-width: 100%;
+  }
+
+  .transform-banner {
+    transform: rotate(90deg);
+    position: absolute;
+    left: 0%;
+    right: 0;
+    
+  }
+
+  .icon {
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {

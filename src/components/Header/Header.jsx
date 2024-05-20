@@ -5,8 +5,8 @@ import Banner from "../../components/Banner/Banner";
 
 function Header() {
   return (
-    <div className="header">
-      <div className="container">
+    <div className="header ">
+      <div className="container ">
         <div className="row">
           <div className="col-12 col-lg-4 flex-container flex-align-center">
             <div className="header-banner">
@@ -19,10 +19,10 @@ function Header() {
               </RouterLink>
             </div>
           </div>
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-4 flex-container flex-align-center flex-justify-center relative">
             <Banner />
           </div>
-          <div className="col-12 col-lg-4 flex-container flex-align-center">
+          <div className="col-12 col-lg-4 flex-container flex-align-center flex-justify-center mb-10">
             <div className="blog">
               <h4>Blog</h4>
               <div className="blog-items">
